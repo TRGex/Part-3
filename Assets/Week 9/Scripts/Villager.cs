@@ -12,7 +12,7 @@ public class Villager : MonoBehaviour
     bool isSelected;
     public GameObject highlight;
 
-    protected Vector2 destination;
+    public Vector2 destination;
     Vector2 movement;
     float speed = 3;
 
@@ -83,5 +83,10 @@ public class Villager : MonoBehaviour
     protected virtual void Attack()
     {
         animator.SetTrigger("Attack");
+    }
+
+    public virtual ChestType CanOpen()
+    {
+        return ChestType.Villager;
     }
 }
