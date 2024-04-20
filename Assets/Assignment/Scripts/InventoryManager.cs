@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
     public GameObject inventoryView;
-    public GameObject[] inventory;
+    public GameObject[] Inventory;
 
     // Start is called before the first frame update
     void Start()
